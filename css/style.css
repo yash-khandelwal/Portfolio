@@ -1,3 +1,45 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+/* Custom Properties */
+
+
+:root{
+	--ff-primary: 'Source Sans Pro', sans-serif;
+	--ff-secondary: 'Source Sans Pro', sans-serif;
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-light: #fff;
+	--clr_dark: #303030;
+	--clr-accent: #16e0bd;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.25rem;
+	}
+}
+
+/* General Styles*/
+
 body {
-	background: #000000;
+	background: var(--clr-light);
+	color: var(--clr_dark);
+	margin: 0;
+	font-family: var(--ff-primary)
+	font-size: var(--fs-body);
+	line-height: 1.6;
 }
