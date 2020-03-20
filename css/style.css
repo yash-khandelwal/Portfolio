@@ -285,3 +285,70 @@ nev {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.portfolio__item {
+	background: var(--clr-accent);
+	overflow: hidden;
+}
+
+.portfolio__img {
+	transition: 
+		transform 750ms cubic-bezier(.5, 0, .5, 1),
+		opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+	position: relative;
+	z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+	transform: scale(1.2);
+	opacity: .75;
+
+}
+
+/* Footer */
+
+.footer {
+	background: #111;
+	color: var(--clr-accent);
+	text-align: center;
+	padding:2.5em 0;
+	font-size: var(--fs-h3);
+}
+
+.footer a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.footer-link {
+	font-weight: var(--fw-bold);
+}
+
+.footer-link:hover,
+.social-list__link:hover {
+	opacity: 0.7;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+.social-list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 2em 0 0;
+	padding: 0;
+}
+
+.social-list__item {
+	margin: 0 .5em;
+}
+
+.social-list__link {
+	padding: .5em;
+}
