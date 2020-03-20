@@ -9,14 +9,14 @@
 
 :root{
 	--ff-primary: 'Source Sans Pro', sans-serif;
-	--ff-secondary: 'Source Sans Pro', sans-serif;
+	--ff-secondary: 'Source Sans Pro', monospace;
 
 	--fw-reg: 300;
 	--fw-bold: 900;
 
 	--clr-light: #fff;
 	--clr_dark: #303030;
-	--clr-accent: #16e0bd;
+	--clr-accent: #ff9966;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -37,6 +37,10 @@
 }
 
 /* General Styles*/
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	background: var(--clr-light);
@@ -188,8 +192,24 @@ header {
 	z-index: 1000;
 }
 
-.nav-open  {
-	background: #f00;
+.nav-open .nav {
+	transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+	position: fixed;
+}
+
+.nav-open .hamburger {
+	transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+	transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+	opacity: 0;
 }
 
 .hamburger {
@@ -437,4 +457,12 @@ header {
 
 .social-list__link {
 	padding: .5em;
+}
+
+/* Individual Postfolio Item styles */
+
+.portfolio-item-individual {
+	padding: 0 2em 2em;
+	max-width: 1000px;
+	margin:0 auto;
 }
