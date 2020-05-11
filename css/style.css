@@ -370,6 +370,7 @@ header {
 		width: calc(100% + 2em);
 		padding-left: 1em;
 		padding-right: calc(250px + 3em);
+		margin-bottom: 1em;
 	}
 
 	.about-me__img {
