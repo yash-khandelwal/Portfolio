@@ -8,8 +8,9 @@
 
 
 :root{
-	--ff-primary: 'Source Sans Pro', sans-serif;
-	--ff-secondary: 'Source Sans Pro', monospace;
+	font-family: monospace;
+	--ff-primary: "Arial";
+	--ff-secondary: "Arial";
 
 	--fw-reg: 300;
 	--fw-bold: 900;
@@ -21,7 +22,7 @@
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
 	--fs-h3: 1.25rem;
-	--fs-body: 1rem;
+	--fs-body: 1.25rem;
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
 		  0.125em 0.125em 0.25em rgba(0,0,0, 0.15);d
@@ -370,13 +371,13 @@ header {
 		width: calc(100% + 2em);
 		padding-left: 1em;
 		padding-right: calc(250px + 3em);
-		margin-bottom: 1em;
 	}
 
 	.about-me__img {
 		grid-area: img;
 		position: relative;
 		z-index: 2;
+		height: 300px;
 	}
 }
 
@@ -470,4 +471,25 @@ header {
 
 video {
 	width: 100%;
+}
+
+
+
+
+
+/* Additional styling */
+
+
+p{
+	font-style: bold;
+	font-size: 1.25em;
+}
+
+ul{
+	font-size: 1.25em;
+	font-style: bold;
+}
+
+body{
+	background-color: #eeeeef;
 }
