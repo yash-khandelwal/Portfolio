@@ -262,7 +262,7 @@ header {
 		grid-column-gap: 1em;
 		width: min-content;
 		margin: 0 auto;
-		grid-template-areas: 
+		grid-template-areas:
 			"img title"
 			"img subtitle";
 		grid-template-columns: min-content max-content;
@@ -281,9 +281,9 @@ header {
 		grid-row: 2;
 		text-align: right;
 		position: relative;
-		left: -1.5em; 
-		width: calc(100% + 1.5em); 
-	} 
+		left: -1.5em;
+		width: calc(100% + 1.5em);
+	}
 }
 
 /* My Services Section */
@@ -310,7 +310,7 @@ header {
 	height: 1px;
 	margin:0.5em auto 1em;
 	background: var(--clr-light);
-	opacity: 0.5; 
+	opacity: 0.5;
 }
 
 .services {
@@ -349,11 +349,11 @@ header {
 	.about-me {
 		display: grid;
 		grid-template-columns: 1fr 250px;
-		grid-template-areas: 
+		grid-template-areas:
 			"title img"
 			"subtitle img"
 			"text img";
-		grid-column-gap: 2em;	
+		grid-column-gap: 2em;
 
 
 	}
@@ -397,10 +397,12 @@ header {
 .portfolio__item {
 	background: var(--clr-accent);
 	overflow: hidden;
+	margin: .5em;
+	border-radius: 1em;
 }
 
 .portfolio__img {
-	transition: 
+	transition:
 		transform 750ms cubic-bezier(.5, 0, .5, 1),
 		opacity 250ms linear;
 }
