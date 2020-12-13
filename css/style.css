@@ -6,6 +6,9 @@
 
 /* Custom Properties */
 
+.service a{
+	color: #eee;
+}
 
 :root{
 	font-family: monospace;
