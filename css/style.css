@@ -19,8 +19,8 @@
 	--fw-bold: 900;
 
 	--clr-light: #fff;
-	--clr_dark: #303030;
-	--clr-accent: #ff9966;
+	--clr_dark: #030303;
+	--clr-accent: #00FECA;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -28,7 +28,7 @@
 	--fs-body: 1.25rem;
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-		  0.125em 0.125em 0.25em rgba(0,0,0, 0.15);d
+		  0.125em 0.125em 0.25em rgba(0,0,0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -503,4 +503,12 @@ body{
 	margin: 50px;
 	border-radius: 30px;
 	border: 10px solid black;
+}
+
+.font-white {
+	color: #fff;
+}
+
+.font-black {
+	color: #000;
 }
